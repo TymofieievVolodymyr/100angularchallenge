@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    padding: 10px;
+    background-color: indigo;
+    color: white;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.header {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    border: 1px solid azure;
+}
+
+.body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    border: 1px solid olive;
+}
+
+.footer {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    border: 1px solid brown;
+}
+
+:host ::ng-deep p {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+}
