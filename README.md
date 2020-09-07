@@ -26,3 +26,15 @@
     :host ::ng-deep li {
       display: inline;
     }
+ - Challenge 2
+  - ```
+     <app-card [iconclass]="'iconclass'">
+     <p body>Body Content</p>
+     <p footer>Footer</p>
+     </app-card>
+    ```
+  - ```
+    <ng-content select="[body]"></ng-content>
+    <ng-content select="[footer]"></ng-content>
+    ```
+    
