@@ -1,0 +1,23 @@
+@media screen and (max-width: 767.9px){
+    grid-template-columns: 1fr;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    background-color: greenyellow;
+    color: white;
+
+    
+}
+
+:host ::ng-deep ul {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+}
+
+:host ::ng-deep li {
+    display: inline;
+}
