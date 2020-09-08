@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-gap: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+        
+    }
+
+    .head {
+        display: grid;
+        grid-gap: 10px;
+        align-items: center;
+        padding: 10px;
+        grid-template-columns: 1fr auto;
+        background-color: darkcyan;
+        color: white;
+    }
+    
+    i {
+        transition: all 0.3s;
+    }
+
+    i.is-expanded {
+        transform: rotate(-180deg);
+    }
