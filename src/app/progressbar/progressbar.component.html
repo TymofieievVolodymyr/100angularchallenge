@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="head">
+        <i class="fa fa-info-circle"></i>
+        <h3>ProgressBar</h3>
+    </div>
+    <div class="content">
+        <p>{{value}}</p>
+        <progress [value]="value" [max]="maxvalue"></progress>
+    </div>
+    <ng-content></ng-content>
+</div>

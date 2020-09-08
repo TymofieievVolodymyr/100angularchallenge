@@ -9,6 +9,9 @@
 
 <app-accordion [classes]="'fa fa-info-circle'" [title]="'Accordion'" [items]="items"></app-accordion>
 
+<app-progressbar [value]="progressValue">
+  <button (click)="progressValue=progressValue+10">UPDATE</button>
+</app-progressbar>
 <app-card [iconClasses]="'fa fa-info-circle'" [title]="'Card'" [subtitle]="'subTitle'">
   <p body>Body Content</p>
   <p footer>Footer Content</p>
