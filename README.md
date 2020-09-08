@@ -38,3 +38,20 @@
     <ng-content select="[footer]"></ng-content>
     ```
     
+ - Challenge 3 => Accordion
+   - ```
+     <div class="head">
+      <div class="title">
+        <h3>{{item.title}}</h3>
+        <i class="fa fa-chevron-down" [class.is-expanded]="item.isExpanded" (click)="toggle(item)"></i>
+      </div>
+      <div class="content" *ngIf="item.isExpanded">
+        <p>{{item.content}}</p>
+      </div>
+     </div>
+     ```
+   - ```
+     toggle(item: Accordion): void {
+       item.isExpanded = !item.isExpanded;
+     }
+     ```
