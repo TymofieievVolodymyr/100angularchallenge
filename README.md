@@ -55,3 +55,16 @@
        item.isExpanded = !item.isExpanded;
      }
      ```
+   - ```
+     .head {
+       display: grid;
+       grid-gap: 10px;
+       grid-template-columns: 1fr auto;
+     }
+     i {
+       transition: all 0.3s;
+     }
+     i.is-expanded {
+      transform: rotate(-180deg);
+     }
+     ```
