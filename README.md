@@ -68,3 +68,30 @@
       transform: rotate(-180deg);
      }
      ```
+- Challenge 4 => ProgressBar 
+  - ```
+    @Input() value = 0;
+    maxvalue =100;
+    <app-progressbar [value]="progressValue"></app-progressbar>
+    <button (click)="progressValue=progressValue+10">Update</button>
+    ```
+  - ```
+    <progress [value]="value" [max]="maxvalue"></progress>
+    ```
+  - ```
+    progress {
+      width: 100%;
+      height: 15px;
+      background-color: #eee;
+      transition: all 1s;
+    }
+    
+    progress[value]::-webkit-progress-value {
+      background-color: #blue;
+      transition: all 3s;
+    }
+    progress[value]::-webkit-progress-bar,
+    progress[value]::-webkit-progress-value {
+      border-radius: 20px;
+    }
+    ```
