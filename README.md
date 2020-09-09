@@ -95,3 +95,32 @@
       border-radius: 20px;
     }
     ```
+- Challenge 5 => Star ratings
+  - ```
+     @Input() rating = 0.0;
+     maxRating = 5;
+     public get fullStars(): number[] {
+       const full = Math.floor(this.rating);
+       const fullStars = Array(full).fill(0);
+       return fullStars;
+     }
+     public get emptyStars(): number[] {
+       const full = Math.floor(this.maxRating - this.rating);
+       const fullStars = Array(full).fill(0);
+       return fullStars;
+     }
+     public get halfStars(): number[] {
+       const full = Math.floor(this.rating);
+       const empty = Math.floor(this.maxRating - this.rating);
+       const half = Math.floor(this.maxRating - full - empty);
+       const fullStars = Array(half).fill(0);
+       return fullStars;
+     }
+     ```
+   - ```
+      <i class="fa fa-star" *ngFor="let i of fullStars"></i>
+      <i class="fa fa-star-half-o" *ngFor="let i of halfStars"></i>
+      <i class="fa fa-star-o" *ngFor="let i of emptyStars"></i>
+     ```
+
+
