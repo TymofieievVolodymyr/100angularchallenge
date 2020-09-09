@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-gap: 10px;
+    border-radius: 20px;
+    border: 2px solid tan;
+    color: ghostwhite;
+}
+
+.header {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: rosybrown;
+    border-radius: 20px;
+}
+.show i {
+    color: gold;
+}

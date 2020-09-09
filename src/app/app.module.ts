@@ -7,6 +7,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CardComponent } from './card/card.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
+import { StarRatingsComponent } from './star-ratings/star-ratings.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
     ToolbarComponent,
     CardComponent,
     AccordionComponent,
-    ProgressbarComponent
+    ProgressbarComponent,
+    StarRatingsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

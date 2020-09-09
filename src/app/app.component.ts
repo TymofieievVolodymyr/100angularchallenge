@@ -9,6 +9,7 @@ import { Accordion } from './accordion';
 export class AppComponent {
   title = 'BasicToolbar';
   progressValue = 10;
+  ratingVal = 0;
   items: Accordion[] = [
     {
       'title': 'Example1',

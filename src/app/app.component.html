@@ -12,6 +12,10 @@
 <app-progressbar [value]="progressValue">
   <button (click)="progressValue=progressValue+10">UPDATE</button>
 </app-progressbar>
+
+<app-star-ratings [rating]="ratingVal">
+  <input type="number" [(ngModel)]="ratingVal" name="ratingVal" step="0.5" min="0" max="5" value="0">
+</app-star-ratings>
 <app-card [iconClasses]="'fa fa-info-circle'" [title]="'Card'" [subtitle]="'subTitle'">
   <p body>Body Content</p>
   <p footer>Footer Content</p>
